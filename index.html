@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator-container">
+        <!-- Display section -->
+        <div class="display" id="display">
+            <div id="input">
+                <!-- The equation or input will be shown here -->
+            </div>
+            <div id="output">
+                <!-- The result will be displayed here -->
+            </div>
+        </div>
+        <!-- Button section -->
+        <div class="button-section" id="button-section">
+            <button class="button top-button" id="all-clear">
+                AC
+            </button>
+            <button class="button top-button" id="negative">
+                +/-
+            </button>
+            <button class="button top-button" data-value="% " id="percentage">
+                %
+            </button>
+            <button class="button side-button" id="delete">
+                ⌫ 
+            </button>
+            <button class="button num-button" data-value="1" id="one">
+                1
+            </button>
+            <button class="button num-button" data-value="2" id="two">
+                2
+            </button>
+            <button class="button num-button" data-value="3" id="three">
+                3
+            </button>
+            <button class="button side-button operator" data-value=" ÷ " id="divide">
+                ÷
+            </button>
+            <button class="button num-button" data-value="4" id="four">
+                4
+            </button>
+            <button class="button num-button" data-value="5" id="five">
+                5
+            </button>
+            <button class="button num-button" data-value="6" id="six">
+                6
+            </button>
+            <button class="button side-button operator" data-value=" x " id="multiply">
+                x      
+            </button>
+            <button class="button num-button" data-value="7" id="seven">
+                7
+            </button>
+            <button class="button num-button" data-value="8" id="eight">
+                8
+            </button>
+            <button class="button num-button" data-value="9" id="nine">
+                9
+            </button>
+            <button class="button side-button operator" data-value=" + " id="plus">
+                +
+            </button>
+            <button class="button num-button" data-value="." id="dot">
+                .
+            </button>
+            <button class="button num-button" data-value="0" id="zero">
+                0
+            </button>
+            <button class="button num-button" id="equal">
+                =
+            </button>
+            <button class="button side-button operator" data-value=" - " id="minus">
+                −
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

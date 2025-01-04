@@ -1,0 +1,121 @@
+html {
+    height: 100%;
+    background-color: darkgrey;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+#calculator-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 3%;
+
+    gap: 2%;
+    box-sizing: border-box;
+
+    width: 400px;
+
+    aspect-ratio: 400 / 650;
+
+    max-width: 90vw;
+    max-height: 100vh;
+    min-width: 300px;
+    min-height: 412.5px;
+    border-radius: 7%;
+    overflow: hidden;
+}
+
+.button-section{
+    flex: 1 1 75%;
+    background-color: rgba(1,1,0,255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    padding: 2%;
+    border-radius: 10%;
+}
+
+.display{
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    
+    font-size: xx-large;
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+#input{
+    flex: 1 1 45%;
+    align-items: end;
+    color: gray;
+}
+
+#output{
+    flex: 1 1 55%;
+    align-items: start;
+    font-size: 50px;
+}
+
+#input, #output {
+    flex: 1;
+    white-space: nowrap;
+    overflow-x: auto; /* Horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    box-sizing: border-box;
+    padding: 0 5px;
+    max-height: 50%;
+    text-align: end; /* Ensure alignment follows the content flow */
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.button{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    user-select: none;
+}
+
+.num-button{
+    background-color: rgba(42,42,44,255);
+}
+
+.side-button{
+    background-color: rgba(255,158,11,255);
+}
+
+.top-button{
+    background-color: rgba(92,93,94,255);
+}
+
+button{
+    font-size: 120%;
+    color: white;
+    border: none;
+}
+.button:hover{
+    filter: brightness(1.2);
+}
+
+.button:active{
+    filter: brightness(1.4);
+}
