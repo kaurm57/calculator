@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-color: darkgrey;
+    background: linear-gradient(to top, rgb(28, 28, 28), rgb(69, 69, 69));
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Helvetica Neue", Arial, sans-serif;
     color: white;
 }
