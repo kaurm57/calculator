@@ -11,13 +11,14 @@
 </head>
 <body>
       <script>
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '+', '-', '*', '/', '%', '.'];
-        let str = '';
-
-        for (let i = 0; i < arr.length; i++) {
-          str += arr[i];
+        const opList = ["+", "-", "÷", "x", "."];
+        function splitStr(str) {
+          const regex = /([+\-÷x.])/;
+          return str.split(regex).filter(Boolean); // filter removes empty strings
         }
-        console.log(str);
+
+        console.log(splitStr("12+2-3x4÷5"));
+
       </script>
     </div>
   </div>
